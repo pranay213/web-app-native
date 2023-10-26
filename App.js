@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { BackHandler, SafeAreaView, View } from 'react-native';
 import WebView from 'react-native-webview';
 import { StatusBar } from 'expo-status-bar';
+import Notificaation from './src/Notification';
 
 export default function App() {
 
@@ -27,6 +28,7 @@ export default function App() {
       <View style={{ flex: 1 }}>
         <StatusBar translucent={false} barStyle="light-content" backgroundColor='rgba(0, 0, 0, 0)' style="Dark" />
         <WebView ref={webView} source={{ uri: 'https://mobilemasala.com/' }} style={{ flex: 1 }} />
+        <Notificaation/>
       </View>
     </SafeAreaView>
   );

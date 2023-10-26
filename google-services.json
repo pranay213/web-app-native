@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "770514589383",
+    "project_id": "mm-notifications-30950",
+    "storage_bucket": "mm-notifications-30950.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770514589383:android:d8ced06a86d2828d3810e2",
+        "android_client_info": {
+          "package_name": "com.rayeepradeep.MM"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7MxWI-8TSpr_lmNede1gPs_9uhDJx-uE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

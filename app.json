@@ -18,6 +18,7 @@
       "supportsTablet": true
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/logo.png",
         "backgroundColor": "#ffffff"
@@ -29,8 +30,11 @@
     },
     "extra": {
       "eas": {
-        "projectId": "257e2805-1ebd-4473-b627-e67e38ef4fea"
+        "projectId": "70ae0622-3174-466d-92c8-3305f039df34"
       }
-    }
+    },
+    "plugins": [
+      "@notifee/react-native"
+    ]
   }
 }
