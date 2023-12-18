@@ -57,11 +57,6 @@ workflows:
         notify:
           success: true
           failure: false
-      google_play:
-        credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
-        track: internal
-        submit_as_draft: true
-
   react-native-ios:
     name: React Native iOS
     max_build_duration: 120
