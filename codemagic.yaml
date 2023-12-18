@@ -10,9 +10,9 @@ workflows:
       android_signing:
         - keystore_reference
       groups:
-        - google_play # <-- (Includes GCLOUD_SERVICE_ACCOUNT_CREDENTIALS <-- Put your google-services.json)
+        - google-services.json
       vars:
-        PACKAGE_NAME: "io.codemagic.expoapp" # <-- Put your package name here e.g. com.domain.myapp
+        PACKAGE_NAME: "com.rayeepradeep.MM" # <-- Put your package name here e.g. com.domain.myapp
       node: 16.14.2
     triggering:
       events:
@@ -53,8 +53,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - user_1@example.com
-          - user_2@example.com
+          - pranaykodam.213@gmail.com
         notify:
           success: true
           failure: false
@@ -72,11 +71,11 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: io.codemagic.expoapp
+        bundle_identifier: com.rayeepradeep.MM
       vars:
         XCODE_WORKSPACE: "ExpoApp.xcworkspace" # <-- Put the name of your Xcode workspace here
         XCODE_SCHEME: "ExpoApp" # <-- Put the name of your Xcode scheme here
-        BUNDLE_ID: "io.codemagic.expoapp" # <-- Put your Bundle Id here e.g com.domain.myapp
+        BUNDLE_ID: "com.rayeepradeep.MM" # <-- Put your Bundle Id here e.g com.domain.myapp
         APP_ID: 1616629701 # <-- Put the app id number here. This is found in App Store Connect > App > General > App Information
       node: 16.14.2
       xcode: 13.1
